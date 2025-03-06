@@ -1,0 +1,36 @@
+/* CSS basico */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #333;
+    /* margin: 40px; */
+    /* padding: 40px; */
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 40px;
+}
+
+h3 {
+    color: #333;
+    margin-top: 80px;
+}
+
+header,
+section {
+    margin: 20px;
+    padding: 20px;
+}
+
+section {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

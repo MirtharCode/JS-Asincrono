@@ -1,0 +1,9 @@
+{
+    "titulo": "Datos de Ejemplo",
+    "version": 1.2,
+    "items": [
+        "Primer elemento",
+        "Segundo elemento",
+        "Tercer elemento"
+    ]
+}

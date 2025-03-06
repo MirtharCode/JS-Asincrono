@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>JavaScript Asíncrono</title>
+
+        <!-- Estilos -->
+        <link rel="stylesheet" href="css/style.css" />
+
+        <!-- CDNs -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Funcionamiento Asíncrono en JavaScript y AJAX</h1>
+            <a
+                href="https://developer.mozilla.org/es/docs/Learn_web_development/Extensions/Async_JS"
+                target="_blank"
+                >Documentación sobre JS asíncrono</a
+            >
+        </header>
+
+        <!-- Clase 1 -->
+        <section class="container">
+            <h2>Clase 1: Fundamentos de Asincronía y AJAX</h2>
+
+            <a
+                href="https://developer.mozilla.org/es/docs/Learn_web_development/Extensions/Async_JS/Introducing"
+                target="_blank"
+                >Conceptos básicos asincronía</a
+            >
+            <br />
+            <br />
+
+            <!-- Boton alert() -->
+            <button id="btnAlert">Mostrar Alerta</button>
+
+            <h3>Ejemplo XMLHttpRequest</h3>
+            <button id="btnXHR">Cargar con XHR</button>
+            <div id="resultXHR"></div>
+
+            <h3>Ejemplo fetch()</h3>
+            <button id="btnFetch">Cargar con fetch()</button>
+            <div id="resultFetch"></div>
+
+            <h3>Ejemplo Promesas</h3>
+            <div id="resultPromise"></div>
+        </section>
+
+        <!-- Clase 2 -->
+        <section>
+            <h2>Clase 2: Librerías y Ejercicios</h2>
+
+            <h3>1. Ejemplo jQuery</h3>
+            <button id="btnJQuery">Cargar con jQuery</button>
+            <div id="resultJQuery"></div>
+
+            <h3>2. Ejemplo Axios</h3>
+            <button id="btnAxios">Cargar con Axios</button>
+            <div id="resultAxios"></div>
+        </section>
+
+        <script src="js/script.js"></script>
+    </body>
+</html>

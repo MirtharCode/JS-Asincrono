@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Cargar JSON Local</title>
+
+        <!-- Estilos -->
+        <link rel="stylesheet" href="css/style.css" />
+
+        <!-- CDNs -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Cargar archivo JSON local</h1>
+            <a href="https://developer.mozilla.org/es/docs/Web/API/Window/fetch" target="_blank"
+                >Documentación función fetch()</a
+            >
+        </header>
+
+        <section>
+            <h2>
+                Usando la funcion fetch() podemos cargar datos de otros archivos tanto locales como
+                remotos.
+            </h2>
+            <button id="cargarJSON">Cargar Datos</button>
+            <div id="resultado"></div>
+        </section>
+
+        <script src="js/scriptLoad.js"></script>
+    </body>
+</html>
