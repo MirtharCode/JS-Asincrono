@@ -1,3 +1,4 @@
+// Antigua función (no está obsoleta pero es mejor la de fetch)
 $("#btnXHR").click(function () {
     var xhr = new XMLHttpRequest();
     xhr.open("GET", "https://dummyjson.com/recipes/?delay=3000");
@@ -57,7 +58,7 @@ miPromesa
         console.error(error);
     });
 
-// jQuery
+// jQuery a través de ajax
 $("#btnJQuery").click(function () {
     $.ajax({
         url: "https://jsonplaceholder.typicode.com/posts/2",
@@ -81,4 +82,27 @@ document.getElementById("btnAxios").addEventListener("click", function () {
         .catch(function (error) {
             console.error("Error Axios:", error);
         });
+});
+
+
+// Función fetch() para hacer una petición a una API
+$("#btnImg").on("click", function(){
+    
+    fetch('https://dummyjson.com/recipes/1')
+        .then(function(response){
+            if (!response.ok) {
+                throw new Error("Network response was not ok");
+            }
+            return response.json();
+        })
+
+        .then(function(response){
+            console.log(response);
+            $("#imgCont").append('<img src="' + response.image + '" alt="IMAGEN de API" width="50%">')
+        })
+
+        .catch(function(error){
+            console.log(error);
+        })
+
 });
